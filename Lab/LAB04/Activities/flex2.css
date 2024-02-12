@@ -1,0 +1,56 @@
+.wrapper {
+    display:flex ;
+    flex-flow:row wrap ;
+    font-weight:bold ;
+    text-align:center ;
+    }
+    
+    .wrapper > * {
+    padding:10 px ;
+    flex:1 100%;
+     }
+    
+    .header {
+    background: tomato ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    }
+    
+     .footer {
+    background: lightgreen ;
+    font: fantasy;
+    font-size: 24px;
+    }
+    
+    .main {
+    text-align:center ;
+    background:deepskyblue ;
+ }
+    
+     .aside-1 {
+    background:orange ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif: 30px;
+    }
+    
+    .aside-2 {
+ background:hotpink ;
+     }
+    
+    @media all and ( min-width:600px ) {
+    .aside { flex : 1 0 0; }
+    }
+    
+    @media all and ( min-width : 800px ) {
+    .main { flex : 3 0 px ; }
+    .aside-1 { order : 1; }
+    .main    { order : 2; }
+    .aside-2 { order : 3; }
+    .footer  { order : 4; }
+     }
+    
+    body {
+    
+    padding : 2 em ;
+    }
+    
